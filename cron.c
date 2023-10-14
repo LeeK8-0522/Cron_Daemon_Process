@@ -78,7 +78,6 @@ int main(void)
 			buf[strcspn(buf, "\n")] = '\0';
 			syslog(LOG_INFO, "I changed string buffer~");
 
-			int i = 0;
 			char* saveptr;
 			argv[0] = strtok_r(buf, " ", &saveptr);
 			argv[1] = strtok_r(NULL, " ", &saveptr);
